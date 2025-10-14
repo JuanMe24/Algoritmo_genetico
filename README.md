@@ -160,11 +160,12 @@ python ga_maximize_fx.py --l 16 --K 100 --M 300 --pc 0.9 --seed 123 --plot
 
 ## 🧪 Salida
 
-En consola verás algo como:
+En consola se ve:
 ```
 Best x ~= 0.851179 | f(x) ~= 1.850595
 ```
-Además, si usas `--plot`, se guarda `outputs/best_fitness.png` con la evolución del mejor fitness.
+<center> <img src="punto1/outputs/best_fitness.png" alt="Optimización" width="450"> </center>
+
 
 ## 📝 Notas de implementación
 
@@ -185,5 +186,5 @@ Simula la **evolución natural** para encontrar la mejor solución posible (el v
 5. **Mutación:** algunos bits cambian aleatoriamente para mantener diversidad.  
 6. **Iteración:** el proceso se repite por varias generaciones, mejorando progresivamente la población.
 
-El resultado final es el **valor óptimo de `x`** donde \( f(x) \) alcanza su **máximo global**.
+El resultado final es el **valor óptimo de `x`** donde \( f(x) \) alcanza su **máximo global**. para mejorar la convergencia a mas largo plazo se puede cambiar el alcance de la muestra. 
 
